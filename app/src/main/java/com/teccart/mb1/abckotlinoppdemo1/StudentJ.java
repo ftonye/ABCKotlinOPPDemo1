@@ -49,4 +49,14 @@ public class StudentJ {
     public void setHeight(double height) {
         this.height = height;
     }
+
+    public static String demoStatic()
+    {
+        return "Je suis une methode statique";
+    }
+
+    public  String demoNonStatic()
+    {
+        return "Je suis une methode non statique";
+    }
 }

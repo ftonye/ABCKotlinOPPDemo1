@@ -26,6 +26,17 @@ class MainActivity : AppCompatActivity() {
             this.pw.setText("Hello ")
         })
 
+        // call non static et static avec une classe java
+        val sj = StudentJ()
+        var m1j = sj.demoNonStatic();
+        var m2j = StudentJ.demoStatic()
+
+        // call non static et static avec une classe kotlin
+        val sk= StudentK()
+        var m1k = sk.demoNonStatic()
+        var m2k = StudentK.demoStatic()
+        var m3k = StudentK.test.demoStatic()
+
     }
 
     fun Login(view: View) {

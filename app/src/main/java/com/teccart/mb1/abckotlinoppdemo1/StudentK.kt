@@ -38,4 +38,16 @@ class StudentK( _name:String,_age:Int,_height:Double){
     fun setHeight(h:Double){
         this.height = h
     }
+
+   /* fun demoNonStatic():String{
+        return "je suis une methode non statique"
+    }*/
+   fun demoNonStatic()="je suis une methode non statique"
+
+    companion object test{
+        /* fun demoStatic():String{
+       return "je suis une methode  statique"
+   }*/
+        fun demoStatic()= "je suis une methode statique"
+    }
 }
