@@ -1,6 +1,6 @@
 package com.teccart.mb1.abckotlinoppdemo1
 
-class StudentK( _name:String,_age:Int,_height:Double){
+open class StudentK( _name:String,_age:Int,_height:Double){
     constructor():this("Jhon Doe",18,1.60)//secondaire #1
     constructor(name: String):this(name,18,1.60)//secondaire #2
     constructor(name: String,age: Int):this(name,age,1.60)//equ secondaire #3 kotlin
@@ -42,9 +42,9 @@ class StudentK( _name:String,_age:Int,_height:Double){
    /* fun demoNonStatic():String{
         return "je suis une methode non statique"
     }*/
-   fun demoNonStatic()="je suis une methode non statique"
+  open fun demoNonStatic()="je suis une methode non statique"
 
-    companion object test{
+   companion object test{
         /* fun demoStatic():String{
        return "je suis une methode  statique"
    }*/

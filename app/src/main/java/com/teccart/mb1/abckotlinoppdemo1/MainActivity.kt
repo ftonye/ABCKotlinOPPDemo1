@@ -37,6 +37,18 @@ class MainActivity : AppCompatActivity() {
         var m2k = StudentK.demoStatic()
         var m3k = StudentK.test.demoStatic()
 
+        // heritage et polymorphisme java
+        val sjj = StudentJJ("toto",18,200.0)
+        var m1jj = sjj.demoNonStatic()
+        var m2jj = StudentJJ.demoStatic()
+
+        // heritage et polymorphisme kotlin
+        val skk = StudentKK("toto",18,200.0,3000.0)
+        var m1kk = skk.demoNonStatic()
+
+        var f = ""
+
+
     }
 
     fun Login(view: View) {
